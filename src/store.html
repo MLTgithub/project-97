@@ -10,7 +10,7 @@
             <div class="HE">
                 <span>{{conte.title}}</span>
                 <span>{{conte.province + conte.city + conte.district + conte.address}}</span>
-                <p>电话 : {{conte.mobile}}</p>
+                <p>电话 : {{conte.mobile | limitTo:3}}-{{conte.mobile | limitTo:4:3}}-{{conte.mobile | limitTo:4:7}}</p>
             </div>
         </div>
     </ion-content>

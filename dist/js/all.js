@@ -226,11 +226,18 @@ angular.module('myApp.integral',[]).config(['$stateProvider',function ($statePro
         templateUrl:'integral.html',
         controller:'integralController'
     });
-}]).controller('integralController',['$scope','$ionicViewSwitcher',function ($scope,$ionicViewSwitcher) {
-    $scope.goBack = function () {
-        window.history.go(-1);
-        $ionicViewSwitcher.nextDirection('back');
-    }
+}]).controller('integralController',['$scope','$ionicViewSwitcher','HttpFactory',function ($scope,$ionicViewSwitcher,HttpFactory) {
+    //返回上一层
+    // $scope.goBack = function () {
+    //     window.history.go(-1);
+    //     $ionicViewSwitcher.nextDirection('back');
+    // };
+
+    var url = 'http://114.112.94.166/sunny/wap/api/uintegral';
+    HttpFactory.getData(url).then(function (result) {
+        $scope.ints = result.integralData
+        console.log($scope.ints);
+    });
 }]);
 /**
  * Created by lx on 2016/12/26.
@@ -365,7 +372,8 @@ angular.module('myApp.shoppingCar',[]).config(['$stateProvider',function ($state
 
     var url = 'http://114.112.94.166/sunny/wap/api/ushoppingCart';
     HttpFactory.getData(url).then(function (result) {
-        console.log(result);
+        $scope.shops = result.shoppingCart;
+        console.log(result.shoppingCart);
     });
 
 }]);
@@ -387,7 +395,7 @@ angular.module('myApp.store',['ionic']).config(['$stateProvider',function ($stat
     var url = 'http://114.112.94.166/sunny/wap/api/franchise';
     HttpFactory.getData(url).then(function (result) {
         $scope.contes = result.data;
-        // console.log($scope.contes);
+        console.log($scope.contes);
     })
 }]);
 /**

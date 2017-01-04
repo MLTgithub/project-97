@@ -15,7 +15,8 @@ angular.module('myApp.shoppingCar',[]).config(['$stateProvider',function ($state
 
     var url = 'http://114.112.94.166/sunny/wap/api/ushoppingCart';
     HttpFactory.getData(url).then(function (result) {
-        console.log(result);
+        $scope.shops = result.shoppingCart;
+        console.log(result.shoppingCart);
     });
 
 }]);

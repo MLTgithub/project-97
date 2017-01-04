@@ -1,7 +1,15 @@
+.modal-backdrop-bg{
+    background: gray;
+    opacity: .3;
+}
+/*.modal-backdrop{*/
+    /*background: black;*/
+    /*opacity: .3;*/
+/*}*/
 .mod{
     width: 100%;
     height: 20rem;
-    background:white;
+    background: white;
     position: fixed;
     bottom: 0;
 }

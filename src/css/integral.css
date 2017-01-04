@@ -1,0 +1,49 @@
+.ZO{
+    width: 100%;
+    height: 5rem;
+    background: white;
+    color: rgb(245,54,69);
+    font-family: 黑体;
+    margin-bottom: 1rem;
+}
+.ZO>span{
+    font-size: 1.8rem;
+    line-height: 5rem;
+    padding-left: 1rem;
+}
+.ZO>div{
+    width: 4rem;
+    height: 2rem;
+    border: 1px red solid;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 2rem;
+    display: inline-block;
+    float: right;
+    margin: 1.5rem 1rem 0 0;
+}
+.ZO+div{
+    width:100%;
+    height: 3rem;
+    background: white;
+    line-height: 3rem;
+    font-size: 1.3rem;
+    font-family: 黑体;
+}
+.ZO+div>span{
+    padding-left: 1rem;
+}
+ion-list{
+    width:100%;
+}
+.JF{
+    width: 100%;
+}
+.JF ion-item{
+    font-family: 黑体;
+}
+.JF ion-item>span:nth-of-type(2){
+    float: right;
+    color: rgb(245,54,69);
+}

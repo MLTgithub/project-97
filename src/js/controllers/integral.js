@@ -7,9 +7,16 @@ angular.module('myApp.integral',[]).config(['$stateProvider',function ($statePro
         templateUrl:'integral.html',
         controller:'integralController'
     });
-}]).controller('integralController',['$scope','$ionicViewSwitcher',function ($scope,$ionicViewSwitcher) {
-    $scope.goBack = function () {
-        window.history.go(-1);
-        $ionicViewSwitcher.nextDirection('back');
-    }
+}]).controller('integralController',['$scope','$ionicViewSwitcher','HttpFactory',function ($scope,$ionicViewSwitcher,HttpFactory) {
+    //返回上一层
+    // $scope.goBack = function () {
+    //     window.history.go(-1);
+    //     $ionicViewSwitcher.nextDirection('back');
+    // };
+
+    var url = 'http://114.112.94.166/sunny/wap/api/uintegral';
+    HttpFactory.getData(url).then(function (result) {
+        $scope.ints = result.integralData
+        console.log($scope.ints);
+    });
 }]);

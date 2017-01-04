@@ -16,6 +16,6 @@ angular.module('myApp.store',['ionic']).config(['$stateProvider',function ($stat
     var url = 'http://114.112.94.166/sunny/wap/api/franchise';
     HttpFactory.getData(url).then(function (result) {
         $scope.contes = result.data;
-        // console.log($scope.contes);
+        console.log($scope.contes);
     })
 }]);
