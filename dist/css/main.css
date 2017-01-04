@@ -1,0 +1,444 @@
+.SH{
+    width: 100%;
+    height: 100%;
+}
+.SH ion-item{
+    width: 101%;
+    height: 8rem;
+    margin-top: 1rem;
+}
+.SH ion-item img{
+    width: 7rem;
+    height: 6rem;
+}
+.CO{
+    width: 45%;
+    height: 7.6rem;
+    /*background: lightgrey;*/
+    position: absolute;
+    left: 9rem;
+    top: .2rem;
+    white-space: normal;
+}
+.CO>span{
+    font-size: 1rem;
+    font-family: 黑体;
+}
+.CO>div{
+    width: 6rem;
+    height: 2rem;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    color: gray;
+    text-align: center;
+    line-height: 2rem;
+    font-family: 黑体;
+    position: absolute;
+    right: 0;
+    bottom: .3rem;
+}
+.CN{
+    width: 25%;
+    height: 7.8rem;
+    position: absolute;
+    right: 0;
+    top: .2rem;
+}
+.CN>span{
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+    font-size: 1.3rem;
+    font-family: 微软雅黑;
+}
+.CN>p{
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+}
+.CN>div{
+
+    width: 6rem;
+    height: 2rem;
+    border: 1px solid rgb(236,54,67);
+    /*box-shadow: 0 0 1px .5px red inset;*/
+    border-radius: 4px;
+    color: red;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 2rem;
+    font-family: 黑体;
+    position: absolute;
+    right: 1rem;
+    bottom: .5rem;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+/*轮播图的点*/
+.slider-pager{
+    width: 100%;
+    height: 3rem;
+    background: rgba(0,0,0,.3);
+    line-height: 3rem;
+    padding-left: 2rem;
+    text-align: left;
+    margin-bottom: -1.7rem;
+}
+.slider-pager .slider-pager-page{
+    opacity: 1;
+}
+.slider-pager .active .ion-record::before{
+    color: red;
+}
+.ion-record::before{
+    color: white;
+}
+html,body,.scroll{
+    -webkit-user-select:auto;
+}
+div #rong-conversation{
+    left: 0;
+}
+div#rong-widget-minbtn{
+
+    width:6rem;
+    height:6rem;
+}
+.rongcloud-kefuBtn .rongcloud-people{
+    display: none;
+}
+#rong-widget-minbtn{
+    background:url("../images/peo.png") no-repeat  center/100%;
+}
+.rongcloud-kefuChat #header{
+    background: #E60012;
+}
+
+.tab-item-active{
+     background: rgb(230,0,18);
+     color: white;
+ }
+.tuijain{
+    width: 100%;
+    margin: .5rem 0;
+    text-align: center;
+}
+.tuijain img{
+    width: 15rem;
+}
+.contt{
+    width: 100%;
+    height: 100%;
+}
+.XD{
+    width: 47%;
+    height: 15rem;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    background: lightgray;
+    display: inline-block;
+ }
+.XD img{
+    width: 70%;
+    height: 9rem;
+    display: block;
+    margin: auto;
+    padding-top: .5rem;
+}
+.XE{
+    width: 100%;
+    height: 6rem;
+    background: white;
+    font-size: 1rem;
+    font-family: '黑体';
+    /*text-overflow: ellipsis;*/
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+}
+.XE>span{
+    display: block;
+    margin: 0 .3rem;
+}
+.GT{
+    width: 100%;
+    height: 2rem;
+}
+.GT>span:nth-of-type(1){
+    font-size: 2rem;
+    padding-top: .5rem;
+    color: red;
+}
+.GT>span:nth-of-type(1)::before{
+    content: '¥';
+    font-size: 1.6rem;
+    font-family: '微软雅黑';
+    padding-left: .5rem;
+}
+/*div样式*/
+/*.GT>div{*/
+    /*width: 25px;*/
+    /*height: 25px;*/
+    /*background: rgb(230,0,18);*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*line-height: 25px;*/
+    /*border-radius: 50%;*/
+    /*font-size: 18px;*/
+    /*margin-right: .5rem;*/
+    /*float: right;*/
+/*}*/
+/*button样式*/
+.GT>div{
+    width: 30px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: .5rem;
+    float: right;
+}
+.PD{
+    width: 47%;
+    height: 15rem;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    background: lightgray;
+    display: inline-block;
+}
+.PD img{
+    width: 70%;
+    height: 9rem;
+    display: block;
+    margin: auto;
+    padding-top: .5rem;
+}
+.PE{
+    width: 100%;
+    height: 6rem;
+    background: white;
+    font-size: 1rem;
+    font-family: '黑体';
+    /*text-overflow: ellipsis;*/
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+}
+.PE>span{
+    display: block;
+    margin: 0 .3rem;
+}
+.PT{
+    width: 100%;
+    height: 2rem;
+}
+.PT>span:nth-of-type(1){
+    font-size: 1.5rem;
+    padding-top: .5rem;
+    padding-left: .5rem;
+    color: red;
+}
+/*div样式*/
+.PT>span:nth-of-type(3){
+    width: 28px;
+    height: 28px;
+    background: rgb(230,0,18);
+    color: white;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 50%;
+    margin-right: .5rem;
+    float: right;
+}
+/*button样式*/
+/*.PT>div{*/
+    /*width: 30px;*/
+    /*height: 15px;*/
+    /*border-radius: 50%;*/
+    /*margin-right: .5rem;*/
+    /*float: right;*/
+/*}*/
+.mod{
+    width: 100%;
+    height: 20rem;
+    background:white;
+    position: fixed;
+    bottom: 0;
+}
+.bott{
+    width: 100%;
+    height: 5rem ;
+    position: absolute;
+    bottom: 0;
+}
+.lef{
+    width: 50%;
+    height: 5rem;
+    background: rgb(242,127,136);
+    font-size: 1.5rem;
+    font-family: 微软雅黑;
+    text-align: center;
+    line-height: 5rem;
+    color: white;
+    float: left;
+}
+.rig{
+    width: 50%;
+    height: 5rem;
+    background: rgb(230,0,18);
+    font-size: 1.5rem;
+    font-family: 微软雅黑;
+    text-align: center;
+    line-height: 5rem;
+    color: white;
+    float: right;
+}
+.loog{
+    width: 100%;
+    height: 9rem;
+    background: white;
+}
+.loog>img{
+    height: 9rem;
+    padding: 1rem;
+}
+.loog>div{
+    width: 10rem;
+    height: 9rem;
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    line-height: 2.5rem;
+}
+.loog>div>span{
+    font-size: 1.6rem;
+    font-family: 微软雅黑;
+}
+.loog>div>p{
+    font-family: 微软雅黑;
+    color: grey;
+}
+.BOY{
+    margin-top: 1px;
+    width: 101%;
+}
+.BOY>div:nth-child(1){
+    width: 49%;
+    text-align: center;
+    font-family: 黑体;
+}
+.BOY>div:nth-child(2){
+    height: 3.5rem;
+    display: inline-block;
+    border-right: 1px solid lightgrey;
+}
+.BOY>div:nth-child(3){
+    width: 49%;
+    text-align: center;
+    font-family: 黑体;
+}
+
+.BOY>div:nth-child(1) img{
+    width: 22px;
+    height: 28px;
+}
+.BOY>div:nth-child(3) img{
+    width: 25px;
+    height: 25px;
+}
+.BOY div p{
+    margin-top: -1.5rem;
+}
+ul>li{
+    width: 100%;
+    height: 4.5rem;
+    background: white;
+}
+
+ul>li img{
+    margin: 1.3rem;
+    width: 2rem;
+}
+ul>li span{
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    font-family: 黑体;
+    color: gray;
+    position: absolute;
+}
+ul>li i{
+    font-size: 3rem;
+    color: lightgrey;
+    line-height: 4.5rem;
+    padding-right: 1rem;
+    float: right;
+}
+ul>li a{
+    display:inline-block;
+    padding-right: 1rem;
+    line-height: 4.5rem;
+    font-size: 1.5rem !important;
+    font-family: 黑体;
+    float: right;
+}
+
+ul>li:nth-of-type(1){
+    margin: 1rem 0;
+}
+ul>li:nth-of-type(3) img{
+    margin-top: 1.2rem;
+    margin-left: 1.3rem;
+    margin-right: 1.8rem;
+    width: 1.5rem;
+    height: 2.3rem;
+}
+ul>li:nth-of-type(3){
+    margin: 1px 0;
+}
+ul>li:nth-of-type(5){
+    margin-top: 1.5rem;
+}
+.mapp{
+    width: 100%;
+    height: 2.3rem;
+    position: absolute;
+    text-align: center;
+    line-height: 2.3rem;
+    background: white;
+    opacity: .7;
+    font-size: 1.7rem;
+    font-family: 黑体;
+}
+
+.HD{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+.HD>img{
+      width: 100%;
+}
+.HD .HE{
+    width: 100%;
+    height: 6rem;
+    margin-top: -.5rem;
+    background: white;
+}
+.HD .HE span:nth-of-type(1){
+    color: red;
+    font-size: 1.5rem;
+    font-family: 微软雅黑;
+    display: block;
+    padding: .7rem 0 0 1rem;
+}
+.HD .HE span:nth-of-type(2){
+    color: gray;
+    font-family: 微软雅黑;
+    display: block;
+    padding-left: 1rem;
+}
+.HD .HE p:nth-of-type(1){
+    color: gray;
+    font-family: 微软雅黑;
+    padding-left: 1rem;
+}

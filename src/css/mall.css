@@ -1,0 +1,59 @@
+.PD{
+    width: 47%;
+    height: 15rem;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    background: lightgray;
+    display: inline-block;
+}
+.PD img{
+    width: 70%;
+    height: 9rem;
+    display: block;
+    margin: auto;
+    padding-top: .5rem;
+}
+.PE{
+    width: 100%;
+    height: 6rem;
+    background: white;
+    font-size: 1rem;
+    font-family: '黑体';
+    /*text-overflow: ellipsis;*/
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+}
+.PE>span{
+    display: block;
+    margin: 0 .3rem;
+}
+.PT{
+    width: 100%;
+    height: 2rem;
+}
+.PT>span:nth-of-type(1){
+    font-size: 1.5rem;
+    padding-top: .5rem;
+    padding-left: .5rem;
+    color: red;
+}
+/*div样式*/
+.PT>span:nth-of-type(3){
+    width: 28px;
+    height: 28px;
+    background: rgb(230,0,18);
+    color: white;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 50%;
+    margin-right: .5rem;
+    float: right;
+}
+/*button样式*/
+/*.PT>div{*/
+    /*width: 30px;*/
+    /*height: 15px;*/
+    /*border-radius: 50%;*/
+    /*margin-right: .5rem;*/
+    /*float: right;*/
+/*}*/
