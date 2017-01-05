@@ -365,16 +365,25 @@ angular.module('myApp.shoppingCar',[]).config(['$stateProvider',function ($state
         controller:'shoppingCarController'
     })
 }]).controller('shoppingCarController',['$scope','$ionicViewSwitcher','HttpFactory',function ($scope,$ionicViewSwitcher,HttpFactory) {
-    $scope.goBack = function () {
-        window.history.go(-1);
-        $ionicViewSwitcher.nextDirection("back");
-    };
+    //返回上一层
+    // $scope.goBack = function () {
+    //     window.history.go(-1);
+    //     $ionicViewSwitcher.nextDirection("back");
+    // };
 
     var url = 'http://114.112.94.166/sunny/wap/api/ushoppingCart';
     HttpFactory.getData(url).then(function (result) {
         $scope.shops = result.shoppingCart;
-        console.log(result.shoppingCart);
+        $scope.les = result.shoppingCart.length;
+        console.log($scope.shops);
     });
+
+
+    // var CH = document.getElementById('CH');
+    // var ZH = document.getElementById('ZH');
+    // if(CH == checkbox){
+    //     ZH = checkbox;
+    // }
 
 }]);
 /**
