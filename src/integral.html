@@ -2,8 +2,8 @@
     <ion-content style="background: rgb(238,238,238)">
         <!--<button class="button button-assertive" ng-click="goBack()">回去吧</button>-->
         <!--总积分的样式-->
-        <div class="ZO">
-            <span>总计积分:3800积分</span>
+        <div class="ZO" ng-repeat="int in ints">
+            <span>总计积分:{{int.totalIntegral}}积分</span>
             <div>兑换</div>
         </div>
         <div>
@@ -13,7 +13,7 @@
         <ion-list ng-repeat="int in ints" class="JF">
             <ion-item>
                 <span>{{int.title}}</span>
-                <span>+{{int.totalIntegral}}</span>
+                <span>+{{int.integral}}</span>
                 <p>{{int.addTime}}</p>
             </ion-item>
         </ion-list>

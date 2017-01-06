@@ -23,9 +23,14 @@ angular.module('myApp.shoppingCar',[]).config(['$stateProvider',function ($state
 
 
     // var CH = document.getElementById('CH');
-    // var ZH = document.getElementById('ZH');
-    // if(CH == checkbox){
-    //     ZH = checkbox;
+    // var inp = angular.element(document.querySelectorAll('#inp')[0]);
+    // console.log(inp);
+    // CH.onfocus = function (e) {
+    //     console.log(e.target.value);
+    //     if(e.target.value==='on'){
+    //         inp.css("background","red");
+    //     }
     // }
+
 
 }]);

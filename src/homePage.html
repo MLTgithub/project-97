@@ -41,7 +41,7 @@
         <div class="contt">
             <div ng-repeat="con in cons" class="XD">
                 <!--图片的样式-->
-                <img ng-src=" {{'http://114.112.94.166' + con.goods_introduction}}" ng-click="goToNewsDetail()">
+                <img ng-src="{{'http://114.112.94.166' + con.goods_introduction}}" ng-click="goToNewsDetail()">
                 <div class="XE">
                     <!--照片的描述-->
                     <span ng-click="goToNewsDetail()">{{con.goods_name | limitTo:21}}...</span>

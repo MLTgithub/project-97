@@ -65,11 +65,42 @@ angular.module('myApp.address',[]).config(['$stateProvider',function ($stateProv
         templateUrl:'address.html',
         controller:'addressController'
     });
-}]).controller('addressController',['$scope','$ionicViewSwitcher',function ($scope,$ionicViewSwitcher) {
-    $scope.goBack = function () {
-        window.history.go(-1);
-        $ionicViewSwitcher.nextDirection('back');
-    }
+}]).controller('addressController',['$scope','$ionicViewSwitcher','$ionicPopup','HttpFactory',function ($scope,$ionicViewSwitcher,$ionicPopup,HttpFactory) {
+    //返回上一层
+    // $scope.goBack = function () {
+    //     window.history.go(-1);
+    //     $ionicViewSwitcher.nextDirection('back');
+    // };
+
+
+    var url = 'http://114.112.94.166/sunny/wap/api/uAddress';
+    HttpFactory.getData(url).then(function (result) {
+        $scope.addrs = result.addressData;
+        console.log($scope.addrs);
+    });
+
+
+
+    $scope.showConfirm = function(e) {
+        var confirmPopup = $ionicPopup.confirm({
+            title: '确定要删除该地址吗？',
+            buttons: [
+                { text: '取消' },
+                { text: '确定'}
+                ]
+        });
+
+        confirmPopup.then(function(res) {
+            console.log(e.target.innerHTML);
+            // if(res) {
+            //     console.log('You are sure');
+            // } else {
+            //     console.log('You are not sure');
+            // }
+        });
+    };
+
+
 }]);
 /**
  * Created by lx on 2017/1/3.
@@ -119,7 +150,7 @@ angular.module('myApp.homePage',[]).config(['$stateProvider',function ($statePro
     HttpFactory.getData(url).then(function (result) {
         $scope.cons = result.goodsData;
         $scope.qwes = result.bannerData;
-        console.log($scope.qwes);
+        console.log($scope.cons);
 
     });
 
@@ -180,7 +211,6 @@ angular.module('myApp.homePage',[]).config(['$stateProvider',function ($statePro
     });
 
 
-
     //模态窗口
     $ionicModal.fromTemplateUrl('modal.html', {
         scope: $scope,
@@ -190,18 +220,27 @@ angular.module('myApp.homePage',[]).config(['$stateProvider',function ($statePro
     });
     $scope.openModal = function() {
         $scope.modal.show();
+
+        //数量的增加与减少
+        var num = document.querySelector('#num');
+        console.log(num.innerText);
+        $scope.reduce = function () {
+            if (num.innerText >= 1){
+                num.innerText--;
+            }
+        };
+        $scope.add = function () {
+            num.innerText++;
+        }
     };
 
     $scope.closeModal = function() {
         $scope.modal.hide();
     };
-
-
     //轮播图
     $scope.myActiveSlide = 1;
 
 }]);
-
 /**
  * Created by lx on 2016/12/29.
  */
@@ -380,10 +419,15 @@ angular.module('myApp.shoppingCar',[]).config(['$stateProvider',function ($state
 
 
     // var CH = document.getElementById('CH');
-    // var ZH = document.getElementById('ZH');
-    // if(CH == checkbox){
-    //     ZH = checkbox;
+    // var inp = angular.element(document.querySelectorAll('#inp')[0]);
+    // console.log(inp);
+    // CH.onfocus = function (e) {
+    //     console.log(e.target.value);
+    //     if(e.target.value==='on'){
+    //         inp.css("background","red");
+    //     }
     // }
+
 
 }]);
 /**

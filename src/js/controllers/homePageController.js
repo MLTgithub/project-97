@@ -23,7 +23,7 @@ angular.module('myApp.homePage',[]).config(['$stateProvider',function ($statePro
     HttpFactory.getData(url).then(function (result) {
         $scope.cons = result.goodsData;
         $scope.qwes = result.bannerData;
-        console.log($scope.qwes);
+        console.log($scope.cons);
 
     });
 
@@ -84,7 +84,6 @@ angular.module('myApp.homePage',[]).config(['$stateProvider',function ($statePro
     });
 
 
-
     //模态窗口
     $ionicModal.fromTemplateUrl('modal.html', {
         scope: $scope,
@@ -94,13 +93,23 @@ angular.module('myApp.homePage',[]).config(['$stateProvider',function ($statePro
     });
     $scope.openModal = function() {
         $scope.modal.show();
+
+        //数量的增加与减少
+        var num = document.querySelector('#num');
+        console.log(num.innerText);
+        $scope.reduce = function () {
+            if (num.innerText >= 1){
+                num.innerText--;
+            }
+        };
+        $scope.add = function () {
+            num.innerText++;
+        }
     };
 
     $scope.closeModal = function() {
         $scope.modal.hide();
     };
-
-
     //轮播图
     $scope.myActiveSlide = 1;
 
