@@ -1,7 +1,7 @@
 /**
  * Created by lx on 2016/12/26.
  */
-angular.module('myApp',['ionic','RongWebIMWidget','myApp.homePage','myApp.homePageDetail','myApp.mall','myApp.store','myApp.my','myApp.order','myApp.collect','myApp.shoppingCar','myApp.integral','myApp.address','myApp.payment','myApp.recommend','myApp.httpFactory']).config(['$stateProvider','$urlRouterProvider','$ionicConfigProvider',function ($stateProvider,$urlRouterProvider,$ionicConfigProvider) {
+angular.module('myApp',['ionic','RongWebIMWidget','myApp.homePage','myApp.slideBox','myApp.homePageDetail','myApp.mall','myApp.store','myApp.my','myApp.order','myApp.collect','myApp.shoppingCar','myApp.integral','myApp.address','myApp.payment','myApp.recommend','myApp.httpFactory']).config(['$stateProvider','$urlRouterProvider','$ionicConfigProvider',function ($stateProvider,$urlRouterProvider,$ionicConfigProvider) {
     //适配安卓
     $ionicConfigProvider.views.transition('ios');
     $ionicConfigProvider.tabs.position('bottom');

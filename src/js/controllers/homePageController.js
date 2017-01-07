@@ -23,7 +23,7 @@ angular.module('myApp.homePage',[]).config(['$stateProvider',function ($statePro
     HttpFactory.getData(url).then(function (result) {
         $scope.cons = result.goodsData;
         $scope.qwes = result.bannerData;
-        console.log($scope.cons);
+        console.log($scope.qwes);
 
     });
 
