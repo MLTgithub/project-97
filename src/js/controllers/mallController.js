@@ -16,6 +16,7 @@ angular.module('myApp.mall',[]).config(['$stateProvider',function ($stateProvide
     var url = 'http://114.112.94.166/sunny/wap/api/getGoods';
     HttpFactory.getData(url).then(function (result) {
         $scope.cots = result.goodsData;
+        $scope.qwes = result.bannerData;
         // console.log($scope.cots);
     });
 }]);
