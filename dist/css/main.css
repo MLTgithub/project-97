@@ -333,6 +333,53 @@ div#rong-widget-minbtn{
     margin-right: .5rem;
     float: right;
 }
+.XQ{
+    width: 95%;
+    height: 5.5rem;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+}
+.XQ .XQ1{
+    width: 80%;
+    height: 5.5rem;
+    font-size: 1.3rem;
+    font-family: 黑体;
+    display: inline-block;
+}
+.XQ1 p{
+    font-size: 1.5rem;
+    font-family: 微软雅黑;
+    color: rgb(233,35,50);
+}
+.XQ1 p>span{
+    text-decoration: line-through;
+    font-size: 1rem;
+    color: gray;
+    padding-left: 1rem;
+}
+
+.XQ .XQ2{
+    width: 5rem;
+    height: 3.5rem;
+    border-left: 1px solid lightgrey;
+    font-family: 黑体;
+    color: gray;
+    text-align: center;
+}
+.XQ .XQ2>i{
+    font-size: 2.2rem;
+}
+.XQ3{
+    width: 95%;
+    margin: auto;
+    font-family: 黑体;
+    font-size: 1.4rem;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+}
 .ZO{
     width: 100%;
     height: 5rem;
