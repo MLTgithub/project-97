@@ -28,7 +28,7 @@
 .XQ .XQ2{
     width: 5rem;
     height: 3.5rem;
-    border-left: 1px solid lightgrey;
+    border-left: 2px solid lightgrey;
     font-family: 黑体;
     color: gray;
     text-align: center;
@@ -44,4 +44,46 @@
     color: gray;
     display: flex;
     justify-content: space-between;
+}
+.XQ4{
+    width: 100%;
+    height: 3rem;
+    background: white;
+    margin-top: 1rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-family: 黑体;
+}
+.XQ4>span{
+    padding-left: 1rem;
+}
+.XQ4>i{
+    font-size: 2rem;
+    float: right;
+    padding-right: 1rem;
+}
+.XQ5{
+    width: 100%;
+    height: 3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-family: 黑体;
+    display: flex;
+    justify-content: space-between;
+}
+.XQ5>div{
+    width: 33%;
+    height:3rem;
+    background: white;
+    text-align: center;
+    line-height: 3rem;
+}
+.XQ5>div div{
+    width: 80%;
+    height: 3rem;
+    margin: auto;
+}
+.XQ5>div:nth-child(1) div{
+    color: rgb(236,59,72);
+    border-bottom: 2px solid rgb(236,59,72);
 }
